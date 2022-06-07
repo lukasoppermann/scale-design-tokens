@@ -15,11 +15,6 @@ const pick = require('lodash/pick');
 const { PREFIX, OUTPUT_PATH, OUTPUT_BASE_FILENAME } = process.env;
 const WHITELABEL = process.env.WHITELABEL !== 'false';
 
-/*
-  TODO
-  - [ ] text styles: split into separate variables, plus maybe add css classes?
-*/
-
 // Use custom 'name/cti/kebab2' plus 'color/alpha'
 const cssTransformGroup = [
   'attribute/cti',
@@ -29,6 +24,8 @@ const cssTransformGroup = [
   'size/rem',
   'color/alpha',
   'color/css',
+  'text-style/css',
+  'cubic-bezier/css',
 ];
 
 StyleDictionary.registerAction({
@@ -90,8 +87,7 @@ module.exports = {
         {
           destination: OUTPUT_BASE_FILENAME + '.light.json',
           format: 'json/flat',
-          filter: (token) =>
-            token.path[0] !== 'core' && token.type !== 'textStyle',
+          filter: (token) => token.path[0] !== 'core',
         },
       ],
     },
@@ -104,9 +100,7 @@ module.exports = {
           destination: OUTPUT_BASE_FILENAME + '.dark.json',
           format: 'json/flat',
           filter: (token) =>
-            token.path[0] !== 'core' &&
-            token.original.value?.dark != null &&
-            token.type !== 'textStyle',
+            token.path[0] !== 'core' && token.original.value?.dark != null,
         },
       ],
       actions: ['bundle_css'],
