@@ -1,6 +1,6 @@
 {
   "type": "prerelease",
-  "comment": "remove old_blue, pink and purple, as they are not allowed by brand",
+  "comment": "Update UI color structure",
   "packageName": "@telekom/design-tokens",
   "email": "oppermann.lukas@gmail.com",
   "dependentChangeType": "patch"

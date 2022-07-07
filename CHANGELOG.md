@@ -1,8 +1,45 @@
 # Change Log - @telekom/design-tokens
 
-This log was last generated on Tue, 17 May 2022 16:15:54 GMT and should not be manually modified.
+This log was last generated on Thu, 30 Jun 2022 07:40:44 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0-beta.0
+
+Thu, 30 Jun 2022 07:40:44 GMT
+
+### Changes
+
+- Refactor JSON shape for Figma output (ac@iconstorm.com)
+- Put Tailwind CSS docs in separate file (ac@iconstorm.com)
+- Add new output for a Tailwind CSS preset (matej.amrich@t-systems.com)
+- From alpha to beta, update README (ac@iconstorm.com)
+
+## 1.0.0-alpha.25
+
+Tue, 21 Jun 2022 15:05:19 GMT
+
+### Changes
+
+- functional contrast replace standard with on-subtle  (felix.weber@iconstorm.de)
+- added tags to colors (oppermann.lukas@gmail.com)
+
+## 1.0.0-alpha.24
+
+Tue, 07 Jun 2022 14:58:54 GMT
+
+### Changes
+
+- typo fix & change order of colors to have nice color gradient effect (oppermann.lukas@gmail.com)
+- removing interaction color (oppermann.lukas@gmail.com)
+- remove colors that are not allowed by brand+ (oppermann.lukas@gmail.com)
+- removed the resting and flat shadows (oppermann.lukas@gmail.com)
+- added new green, red and orange + functional tokens (oppermann.lukas@gmail.com)
+- added yellow and cyan + updated violet, teal, brown and olive (oppermann.lukas@gmail.com)
+- updating dark/solid/disabled from 1600->1700 to be different between light & disabled (oppermann.lukas@gmail.com)
+- added a new uuid command that copies to clipboard (oppermann.lukas@gmail.com)
+- fix: rename wrongly duplicated named shadow from flat -> raised for app bottom shadow (oppermann.lukas@gmail.com)
+- remove old_blue, pink and purple, as they are not allowed by brand (oppermann.lukas@gmail.com)
 
 ## 1.0.0-alpha.23
 
